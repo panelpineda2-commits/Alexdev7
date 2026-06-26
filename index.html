@@ -9,7 +9,7 @@
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:radial-gradient(circle,#3b0a63,#12001f);
+background:radial-gradient(circle,#2b0063,#12001f);
 color:white;
 display:flex;
 justify-content:center;
@@ -19,49 +19,69 @@ height:100vh;
 
 .box{
 width:90%;
-max-width:700px;
-text-align:center;
+max-width:900px;
 padding:40px;
-border:1px solid #7a2cff;
-border-radius:20px;
-background:rgba(0,0,0,.3);
-box-shadow:0 0 30px #7a2cff;
+text-align:center;
+border:1px solid #8a2eff;
+border-radius:25px;
+background:rgba(0,0,0,.35);
+box-shadow:0 0 40px #8a2eff;
+}
+
+.logo{
+font-size:70px;
+margin-bottom:10px;
 }
 
 h1{
-font-size:60px;
+font-size:65px;
 margin:0;
 }
 
 .proxy{
-color:#9f4cff;
+color:#a64dff;
+}
+
+.sub{
+font-size:22px;
+opacity:.9;
+margin-top:10px;
+}
+
+.line{
+margin:20px auto;
+width:250px;
+height:3px;
+background:#8a2eff;
 }
 
 #count{
-width:140px;
-height:140px;
-border:6px solid #8a2eff;
+width:180px;
+height:180px;
 border-radius:50%;
+border:8px solid #8a2eff;
 display:flex;
-align-items:center;
 justify-content:center;
-font-size:50px;
+align-items:center;
+font-size:60px;
 margin:30px auto;
 }
 
 button{
+display:none;
+padding:20px 50px;
+font-size:25px;
+border:none;
+border-radius:15px;
 background:#8a2eff;
 color:white;
-border:none;
-padding:18px 40px;
-font-size:22px;
-border-radius:12px;
 cursor:pointer;
-display:none;
+box-shadow:0 0 20px #8a2eff;
 }
 
-button:hover{
-opacity:.9;
+.safe{
+margin-top:15px;
+opacity:.8;
 }
 </style>
 </head>
@@ -69,7 +89,14 @@ opacity:.9;
 <body>
 
 <div class="box">
+
+<div class="logo">🌐</div>
+
 <h1>HABÍBI <span class="proxy">PROXY</span></h1>
+
+<p class="sub">El mejor proxy para acceso rápido y seguro</p>
+
+<div class="line"></div>
 
 <p>Espera unos segundos para continuar</p>
 
@@ -79,6 +106,8 @@ opacity:.9;
 onclick="window.location.href='https://www.mediafire.com/file/6cm9caok58xf4cm/GRINGOXP+PROXY_3.1.0.apk/file'">
 DESCARGAR PROXY
 </button>
+
+<div class="safe">🛡️ 100% Seguro</div>
 
 </div>
 
