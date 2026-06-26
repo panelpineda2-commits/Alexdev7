@@ -3,85 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HABÍBI PROXY</title>
+<title>HABÍBI PROXY - Paso 1</title>
 
 <style>
 body{
 margin:0;
 font-family:Arial,sans-serif;
 background:radial-gradient(circle,#2b0063,#12001f);
-color:white;
 display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
+color:white;
 }
 
 .box{
 width:90%;
-max-width:900px;
+max-width:700px;
 padding:40px;
 text-align:center;
 border:1px solid #8a2eff;
-border-radius:25px;
-background:rgba(0,0,0,.35);
-box-shadow:0 0 40px #8a2eff;
-}
-
-.logo{
-font-size:70px;
-margin-bottom:10px;
+border-radius:20px;
+background:rgba(0,0,0,.3);
+box-shadow:0 0 30px #8a2eff;
 }
 
 h1{
-font-size:65px;
+font-size:55px;
 margin:0;
 }
 
 .proxy{
-color:#a64dff;
-}
-
-.sub{
-font-size:22px;
-opacity:.9;
-margin-top:10px;
-}
-
-.line{
-margin:20px auto;
-width:250px;
-height:3px;
-background:#8a2eff;
-}
-
-#count{
-width:180px;
-height:180px;
-border-radius:50%;
-border:8px solid #8a2eff;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:60px;
-margin:30px auto;
+color:#a84cff;
 }
 
 button{
-display:none;
-padding:20px 50px;
-font-size:25px;
-border:none;
-border-radius:15px;
 background:#8a2eff;
 color:white;
+border:none;
+padding:18px 40px;
+font-size:22px;
+border-radius:12px;
 cursor:pointer;
-box-shadow:0 0 20px #8a2eff;
-}
-
-.safe{
-margin-top:15px;
-opacity:.8;
+margin-top:20px;
 }
 </style>
 </head>
@@ -90,41 +54,17 @@ opacity:.8;
 
 <div class="box">
 
-<div class="logo">🌐</div>
-
 <h1>HABÍBI <span class="proxy">PROXY</span></h1>
 
-<p class="sub">El mejor proxy para acceso rápido y seguro</p>
+<h2>PASO 1 DE 5</h2>
 
-<div class="line"></div>
+<p>Continúa al siguiente paso</p>
 
-<p>Espera unos segundos para continuar</p>
-
-<div id="count">10</div>
-
-<button id="download"
-onclick="window.location.href='https://www.mediafire.com/file/6cm9caok58xf4cm/GRINGOXP+PROXY_3.1.0.apk/file'">
-DESCARGAR PROXY
+<button onclick="window.location.href='paso2.html'">
+SIGUIENTE
 </button>
 
-<div class="safe">🛡️ 100% Seguro</div>
-
 </div>
-
-<script>
-let tiempo=10;
-
-let intervalo=setInterval(()=>{
-tiempo--;
-document.getElementById("count").innerText=tiempo;
-
-if(tiempo<=0){
-clearInterval(intervalo);
-document.getElementById("count").style.display="none";
-document.getElementById("download").style.display="inline-block";
-}
-},1000);
-</script>
 
 </body>
 </html>
