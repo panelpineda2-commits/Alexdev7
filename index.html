@@ -1,22 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Mi Descarga</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HABÍBI PROXY</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:radial-gradient(circle,#3b0a63,#12001f);
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.box{
+width:90%;
+max-width:700px;
+text-align:center;
+padding:40px;
+border:1px solid #7a2cff;
+border-radius:20px;
+background:rgba(0,0,0,.3);
+box-shadow:0 0 30px #7a2cff;
+}
+
+h1{
+font-size:60px;
+margin:0;
+}
+
+.proxy{
+color:#9f4cff;
+}
+
+#count{
+width:140px;
+height:140px;
+border:6px solid #8a2eff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:50px;
+margin:30px auto;
+}
+
+button{
+background:#8a2eff;
+color:white;
+border:none;
+padding:18px 40px;
+font-size:22px;
+border-radius:12px;
+cursor:pointer;
+display:none;
+}
+
+button:hover{
+opacity:.9;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Bienvenido</h1>
+<div class="box">
+<h1>HABÍBI <span class="proxy">PROXY</span></h1>
 
-<p>Espera 10 segundos para descargar.</p>
+<p>Espera unos segundos para continuar</p>
 
-<button id="btn" style="display:none;" onclick="window.location.href='https://www.mediafire.com/'">
-DESCARGAR
+<div id="count">10</div>
+
+<button id="download"
+onclick="window.location.href='https://www.mediafire.com/file/6cm9caok58xf4cm/GRINGOXP+PROXY_3.1.0.apk/file'">
+DESCARGAR PROXY
 </button>
 
+</div>
+
 <script>
-setTimeout(function() {
- document.getElementById("btn").style.display = "block";
-}, 10000);
+let tiempo=10;
+
+let intervalo=setInterval(()=>{
+tiempo--;
+document.getElementById("count").innerText=tiempo;
+
+if(tiempo<=0){
+clearInterval(intervalo);
+document.getElementById("count").style.display="none";
+document.getElementById("download").style.display="inline-block";
+}
+},1000);
 </script>
 
 </body>
