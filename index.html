@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mi Descarga</title>
+</head>
+<body>
+
+<h1>Bienvenido</h1>
+
+<p>Espera 10 segundos para descargar.</p>
+
+<button id="btn" style="display:none;" onclick="window.location.href='https://www.mediafire.com/'">
+DESCARGAR
+</button>
+
+<script>
+setTimeout(function() {
+ document.getElementById("btn").style.display = "block";
+}, 10000);
+</script>
+
+</body>
+</html>
